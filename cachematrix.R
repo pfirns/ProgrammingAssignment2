@@ -9,7 +9,7 @@
 ## 'makeCacheMatrix' function to manipulate and recalculate values for global variables.
 ##
 ## Together, the two functions demonstrate how to use the Lexical scoping characteristic of R to 
-## cache calculated values s that they can be re-used.
+## cache calculated values so that they can be re-used.
 ##
 
 ## Write a short comment describing this function: 
@@ -19,7 +19,7 @@
 #  Returns: a list containing a collection of functions
 # 
 #  This function creates the following:
-#     1. Cacheable matrices x and inv 
+#     1. Cacheable matrices x and inv
 #          (assigning values to global variables means the values become available in the 
 #           environment in which the function was defined - effectively caching the variables
 #           and making the values available to other functions defined within the same environment - 
@@ -52,7 +52,7 @@ makeCacheMatrix <- function(x = matrix()) {
   ## returns a list of functions 
   list(set = set, get = get,
        setinv = setinv,
-       getinv = getinv)
+       getinv = getinv) 
 }
 
 
